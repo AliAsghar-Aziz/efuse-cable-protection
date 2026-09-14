@@ -1,4 +1,3 @@
-# efuse-cable-protection
 # eFuse Cable Protection: Thermal Model vs Fixed I²t
 
 Simulation study of thermal cable protection in 12 V automotive wiring

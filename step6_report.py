@@ -69,3 +69,13 @@ for Ta in ambients:
     ax[1].loglog([p[0] for p in m], [p[1] for p in m], ":",
                  lw=1.8, color=ln.get_color())
 ax[1].set_title("Thermal model tracks every ambient (dotted = trip)")
+ax[1].legend(fontsize=8, title="ambient")
+
+for a in ax:
+    a.set_xlabel("Current (A)")
+    a.set_ylabel("Time (s)")
+    a.grid(True, which="both", alpha=0.3)
+
+plt.tight_layout()
+plt.savefig("step6_comparison.png", dpi=150)
+print("\nsaved step6_comparison.png and results.csv")
