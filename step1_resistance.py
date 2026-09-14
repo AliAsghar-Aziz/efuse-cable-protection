@@ -3,8 +3,14 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
+<<<<<<< HEAD
 R20 = 0.0344
 alpha = 0.00393
+=======
+# A 0.5 mm^2 automotive wire, 1 metre long
+R20 = 0.0344        # ohms at 20 C
+alpha = 0.00393     # copper resistance change per degree
+>>>>>>> 5062d2d419c6999ab39e52b242cbe3cc98753074
 
 T = np.linspace(20, 150, 100)
 R = R20 * (1 + alpha * (T - 20))
